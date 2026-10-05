@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#3E2723" />
+  <title>Gallery — Inside Caferio Restaurant & Café</title>
+  <meta name="description" content="A photographic tour of Caferio: the candle-lit dining room, wood-fired plates, coffee counter and private events." />
+  <link rel="canonical" href="/gallery.html" />
+  <meta name="robots" content="index, follow" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Caferio" />
+  <meta property="og:title" content="Gallery — Inside Caferio Restaurant & Café" />
+  <meta property="og:description" content="A photographic tour of Caferio: the candle-lit dining room, wood-fired plates, coffee counter and private events." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:url" content="/gallery.html" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gallery — Inside Caferio Restaurant & Café" />
+  <meta name="twitter:description" content="A photographic tour of Caferio: the candle-lit dining room, wood-fired plates, coffee counter and private events." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=80" />
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animation.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Gallery",
+      "item": "/gallery.html"
+    }
+  ]
+}</script>
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader" role="status" aria-label="Loading Caferio">
+    <span class="preloader-mark">CAFERIO</span>
+    <span class="preloader-bar"><span></span></span>
+  </div>
+  <div class="progress-bar" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="Caferio home">
+        <span class="logo-mark" aria-hidden="true">C</span>
+        <span><strong>Caferio</strong><small>Restaurant &amp; Caf&eacute;</small></span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="menu.html">Menu</a></li><li><a href="chefs.html">Chefs</a></li><li><a href="gallery.html" class="active" aria-current="page">Gallery</a></li><li><a href="reservation.html">Reservation</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" type="button" data-search-open aria-label="Open search"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14"/></svg></button>
+        <a class="btn btn--gold btn--sm" href="reservation.html">Book a Table</a>
+        <button class="icon-btn nav-toggle" type="button" data-nav-open aria-label="Open menu" aria-controls="mobileNav" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+    <button class="icon-btn nav-close" type="button" data-close aria-label="Close menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></button>
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="menu.html">Menu</a><a href="chefs.html">Chefs</a><a href="gallery.html" class="active">Gallery</a><a href="reservation.html">Reservation</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+    <a class="btn btn--gold btn--block" href="reservation.html">Book a Table</a>
+  </nav>
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Search popup -->
+  <div class="search-popup" id="searchPopup" role="dialog" aria-modal="true" aria-label="Search the site">
+    <button class="icon-btn nav-close" type="button" data-close aria-label="Close search"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></button>
+    <form role="search">
+      <label class="sr-only" for="searchInput">Search Caferio</label>
+      <input id="searchInput" type="search" placeholder="Search dishes, pages, stories…" autocomplete="off" />
+      <button class="icon-btn" type="submit" aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14"/></svg></button>
+    </form>
+    <div class="search-results" id="searchResults" aria-live="polite"></div>
+  </div>
+  <a class="sticky-reserve" href="reservation.html">Reserve a Table</a>
+<main id="main">
+
+  <section class="page-banner" style="background-image:linear-gradient(rgba(30,18,15,.72),rgba(30,18,15,.72)),url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=80')">
+    <div class="container">
+      <h1>Gallery</h1>
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Gallery</span>
+      </nav>
+    </div>
+  </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head center" data-anim="fade-up">
+          <span class="eyebrow">Photography</span>
+          <h2>The room, the plates and the people</h2>
+        </div>
+        <div class="filter-bar" data-gallery-filter role="group" aria-label="Filter gallery"><button class="filter-btn active" type="button" data-filter="all">All</button><button class="filter-btn" type="button" data-filter="interior">Interior</button><button class="filter-btn" type="button" data-filter="food">Food</button><button class="filter-btn" type="button" data-filter="coffee">Coffee</button><button class="filter-btn" type="button" data-filter="events">Events</button></div>
+        <div class="gallery-grid masonry" data-gallery>
+        <figure class="gallery-item wide" data-category="interior" data-anim="zoom-in" data-anim-delay="1">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80&w=800" data-full="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80&w=1600" alt="Caferio main dining room at dusk" loading="lazy" width="800" height="600" />
+        </figure>
+        <figure class="gallery-item tall" data-category="food" data-anim="zoom-in" data-anim-delay="2">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80&w=800" data-full="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80&w=1600" alt="Chef plating a seasonal main course" loading="lazy" width="800" height="600" />
+        </figure>
+        <figure class="gallery-item " data-category="coffee" data-anim="zoom-in" data-anim-delay="3">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80&w=800" data-full="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80&w=1600" alt="Flat white with rosetta latte art" loading="lazy" width="800" height="600" />
+        </figure>
+        <figure class="gallery-item " data-category="interior" data-anim="zoom-in" data-anim-delay="4">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80&w=800" data-full="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80&w=1600" alt="Warm brass lighting above the banquettes" loading="lazy" width="800" height="600" />
+        </figure>
+        <figure class="gallery-item " data-category="food" data-anim="zoom-in" data-anim-delay="1">
+          <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=80&w=800" data-full="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=80&w=1600" alt="Molten chocolate fondant with caramel" loading="lazy" width="800" height="600" />
+        </figure>
+        <figure class="gallery-item tall" data-category="events" data-anim="zoom-in" data-anim-delay="2">
+          <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=80&w=800" data-full="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=80&w=1600" alt="The marble cocktail bar in the evening" loading="lazy" width="800" height="600" />
+        </figure>
+        <figure class="gallery-item " data-category="food" data-anim="zoom-in" data-anim-delay="3">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=80&w=800" data-full="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=80&w=1600" alt="Wood-fired margherita fresh from the oven" loading="lazy" width="800" height="600" />
+        </figure>
+        <figure class="gallery-item " data-category="coffee" data-anim="zoom-in" data-anim-delay="4">
+          <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=900&q=80&w=800" data-full="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=900&q=80&w=1600" alt="Pour-over brewing at the coffee counter" loading="lazy" width="800" height="600" />
+        </figure>
+        <figure class="gallery-item wide" data-category="interior" data-anim="zoom-in" data-anim-delay="1">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80&w=800" data-full="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80&w=1600" alt="Private dining alcove set for eight" loading="lazy" width="800" height="600" />
+        </figure>
+        <figure class="gallery-item " data-category="events" data-anim="zoom-in" data-anim-delay="2">
+          <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=900&q=80&w=800" data-full="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=900&q=80&w=1600" alt="Citrus spritz served at the terrace" loading="lazy" width="800" height="600" />
+        </figure>
+        <figure class="gallery-item " data-category="food" data-anim="zoom-in" data-anim-delay="3">
+          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=900&q=80&w=800" data-full="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=900&q=80&w=1600" alt="Pistachio rose cheesecake slice" loading="lazy" width="800" height="600" />
+        </figure>
+        <figure class="gallery-item " data-category="events" data-anim="zoom-in" data-anim-delay="4">
+          <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1200&q=80&w=800" data-full="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1200&q=80&w=1600" alt="Sharing table laid with seasonal plates" loading="lazy" width="800" height="600" />
+        </figure>
+        <figure class="gallery-item wide" data-category="interior" data-anim="zoom-in" data-anim-delay="1">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80&w=800" data-full="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80&w=1600" alt="Caferio main dining room at dusk" loading="lazy" width="800" height="600" />
+        </figure>
+        <figure class="gallery-item tall" data-category="food" data-anim="zoom-in" data-anim-delay="2">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80&w=800" data-full="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80&w=1600" alt="Chef plating a seasonal main course" loading="lazy" width="800" height="600" />
+        </figure>
+        <figure class="gallery-item " data-category="coffee" data-anim="zoom-in" data-anim-delay="3">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80&w=800" data-full="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80&w=1600" alt="Flat white with rosetta latte art" loading="lazy" width="800" height="600" />
+        </figure>
+        <figure class="gallery-item " data-category="interior" data-anim="zoom-in" data-anim-delay="4">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80&w=800" data-full="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80&w=1600" alt="Warm brass lighting above the banquettes" loading="lazy" width="800" height="600" />
+        </figure>
+        <figure class="gallery-item " data-category="food" data-anim="zoom-in" data-anim-delay="1">
+          <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=80&w=800" data-full="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=80&w=1600" alt="Molten chocolate fondant with caramel" loading="lazy" width="800" height="600" />
+        </figure>
+        <figure class="gallery-item tall" data-category="events" data-anim="zoom-in" data-anim-delay="2">
+          <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=80&w=800" data-full="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=80&w=1600" alt="The marble cocktail bar in the evening" loading="lazy" width="800" height="600" />
+        </figure></div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <button class="lb-btn lb-close" type="button" aria-label="Close viewer">✕</button>
+      <button class="lb-btn lb-prev" type="button" aria-label="Previous image">‹</button>
+      <button class="lb-btn lb-next" type="button" aria-label="Next image">›</button>
+      <div>
+        <img src="" alt="" />
+        <p class="lb-caption"></p>
+      </div>
+    </div>
+
+    <!-- Newsletter -->
+    <section class="section section--cream">
+      <div class="container">
+        <div class="section-head center" data-anim="fade-up">
+          <span class="eyebrow">Stay in touch</span>
+          <h2>Seasonal menus, quietly announced</h2>
+          <p>One email a month: new dishes, coffee lots, and first access to our chef's table evenings.</p>
+        </div>
+        <form class="newsletter-form" data-mini-form novalidate>
+          <label class="sr-only" for="nlEmail">Email address</label>
+          <input id="nlEmail" type="email" placeholder="you@example.com" required />
+          <button class="btn btn--gold" type="submit">Subscribe</button>
+        </form>
+        <p class="form-note" role="status"></p>
+      </div>
+    </section>
+
+  </main>
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">C</span><span><strong>Caferio</strong><small>Restaurant &amp; Caf&eacute;</small></span></a>
+          <p style="margin-top:18px">A candle-lit corner of the old town where seasonal produce, slow cooking and single-origin coffee meet warm, unhurried hospitality.</p>
+          <div class="footer-socials">
+            <a href="https://facebook.com" aria-label="Caferio on Facebook" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3h-3.1V9c0-.9.3-1.5 1.5-1.5H17V4.9A20 20 0 0 0 14.6 4C12.2 4 10.5 5.5 10.5 8.2V11H8v3h2.5v8z"/></svg></a>
+            <a href="https://instagram.com" aria-label="Caferio on Instagram" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2 0 1.9.3 2.3.5.6.2 1 .5 1.4 1s.8.8 1 1.4c.2.4.4 1.1.5 2.3 0 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c0 1.2-.3 1.9-.5 2.3-.2.6-.5 1-1 1.4s-.8.8-1.4 1c-.4.2-1.1.4-2.3.5-1.2 0-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2 0-1.9-.3-2.3-.5-.6-.2-1-.5-1.4-1s-.8-.8-1-1.4c-.2-.4-.4-1.1-.5-2.3 0-1.2-.1-1.6-.1-4.8s0-3.6.1-4.8c0-1.2.3-1.9.5-2.3.2-.6.5-1 1-1.4s.8-.8 1.4-1c.4-.2 1.1-.4 2.3-.5 1.2 0 1.6-.1 4.8-.1m0 5.8a4 4 0 1 0 0 8 4 4 0 0 0 0-8m0 6.6a2.6 2.6 0 1 1 0-5.2 2.6 2.6 0 0 1 0 5.2m5.1-6.8a.9.9 0 1 1-1.9 0 .9.9 0 0 1 1.9 0"/></svg></a>
+            <a href="https://x.com" aria-label="Caferio on X" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 3h3l-6.6 7.6L21.8 21h-6l-4.7-6.1L5.7 21H2.6l7-8.1L2.4 3h6.2l4.3 5.6zm-1 16h1.7L7.6 4.7H5.8z"/></svg></a>
+            <a href="https://linkedin.com" aria-label="Caferio on LinkedIn" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5M3 9h4v12H3zm7 0h3.8v1.7h.05A4.2 4.2 0 0 1 17.6 8.7c4 0 4.7 2.6 4.7 6V21h-4v-5.5c0-1.3 0-3-1.9-3s-2.2 1.4-2.2 2.9V21h-4z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="menu.html">Menu</a></li><li><a href="chefs.html">Chefs</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="reservation.html">Reservation</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul>
+        </div>
+        <div>
+          <h3>Opening Hours</h3>
+          <ul class="hours-list">
+            <li><span>Mon &ndash; Thu</span><span>08:00 &ndash; 23:00</span></li>
+            <li><span>Friday</span><span>08:00 &ndash; 01:00</span></li>
+            <li><span>Saturday</span><span>09:00 &ndash; 01:00</span></li>
+            <li><span>Sunday</span><span>09:00 &ndash; 22:00</span></li>
+            <li><span>Kitchen closes</span><span>1 hour earlier</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>From Instagram</h3>
+          <div class="insta-grid">
+            <a href="gallery.html" aria-label="View gallery"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80&w=200" alt="Caferio dish and interior snapshot" loading="lazy" width="200" height="200" /></a><a href="gallery.html" aria-label="View gallery"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80&w=200" alt="Caferio dish and interior snapshot" loading="lazy" width="200" height="200" /></a><a href="gallery.html" aria-label="View gallery"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=80&w=200" alt="Caferio dish and interior snapshot" loading="lazy" width="200" height="200" /></a><a href="gallery.html" aria-label="View gallery"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=80&w=200" alt="Caferio dish and interior snapshot" loading="lazy" width="200" height="200" /></a><a href="gallery.html" aria-label="View gallery"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80&w=200" alt="Caferio dish and interior snapshot" loading="lazy" width="200" height="200" /></a><a href="gallery.html" aria-label="View gallery"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=900&q=80&w=200" alt="Caferio dish and interior snapshot" loading="lazy" width="200" height="200" /></a>
+          </div>
+          <h3 style="margin-top:26px">Newsletter</h3>
+          <form class="newsletter-form" data-mini-form novalidate>
+            <label class="sr-only" for="footerEmail">Email address</label>
+            <input id="footerEmail" type="email" placeholder="Your email address" required />
+            <button class="btn btn--gold btn--sm" type="submit">Join</button>
+          </form>
+          <p class="form-note" role="status" style="text-align:left"></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p style="margin:0">&copy; 2026 Caferio Restaurant &amp; Caf&eacute;. All rights reserved.</p>
+        <p style="margin:0">Crafted with care &mdash; <a href="contact.html">Privacy</a> &middot; <a href="contact.html">Terms</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating actions -->
+  <div class="floating-actions">
+    <a class="fab fab--whatsapp" href="https://wa.me/15550142200" aria-label="Chat on WhatsApp" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2m5.3 14c-.2.6-1.2 1.2-1.7 1.2s-1.1.3-3.6-.8a12.6 12.6 0 0 1-5-4.6c-.4-.6-1-1.6-1-3s.8-2.1 1-2.4a1 1 0 0 1 .8-.3h.6c.2 0 .4 0 .6.5l.9 2c.1.2.1.4 0 .6l-.4.6-.3.3c-.1.2-.3.3-.1.6a9 9 0 0 0 1.6 2 8 8 0 0 0 2.3 1.4c.3.2.5.1.6 0l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.4.2.5.3s.1.7-.1 1.3z"/></svg></a>
+    <a class="fab fab--call" href="tel:+15550142200" aria-label="Call the restaurant"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.4 11.4 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.57 1 1 0 0 1-.25 1.02z"/></svg></a>
+    <a class="fab fab--top" href="#top" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"/></svg></a>
+  </div>
+
+  <!-- Scripts (modular vanilla ES6, deferred for performance) -->
+  <script src="js/main.js" defer></script>
+  <script src="js/animation.js" defer></script>
+  <script src="js/counter.js" defer></script>
+  <script src="js/slider.js" defer></script>
+  <script src="js/menu-filter.js" defer></script>
+  <script src="js/gallery.js" defer></script>
+  <script src="js/reservation.js" defer></script>
+</body>
+</html>

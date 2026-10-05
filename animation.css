@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Animations — keyframes, scroll reveal states, hover micro-interactions
+   ========================================================================== */
+
+/* Keyframes ---------------------------------------------------------------- */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: none; } }
+@keyframes fadeDown { from { opacity: 0; transform: translateY(-40px); } to { opacity: 1; transform: none; } }
+@keyframes fadeLeft { from { opacity: 0; transform: translateX(-50px); } to { opacity: 1; transform: none; } }
+@keyframes fadeRight { from { opacity: 0; transform: translateX(50px); } to { opacity: 1; transform: none; } }
+@keyframes zoomIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+@keyframes ripple { to { transform: scale(3); opacity: 0; } }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-26px); } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes scrollDot { 0% { top: 8px; opacity: 1; } 70% { top: 22px; opacity: 0; } 100% { top: 8px; opacity: 0; } }
+@keyframes loaderSlide { 0% { transform: translateX(-100%); } 100% { transform: translateX(350%); } }
+@keyframes pulseRing {
+  0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.55); }
+  70% { box-shadow: 0 0 0 26px rgba(212, 175, 55, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+}
+@keyframes shimmer { 0% { background-position: 100% 0; } 100% { background-position: -100% 0; } }
+@keyframes pageIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+
+/* Page transition ----------------------------------------------------------- */
+main { animation: pageIn 0.6s var(--ease) both; }
+body.is-leaving { opacity: 0; transition: opacity 0.28s ease; }
+
+/* Scroll reveal — elements start hidden, .in-view triggers the animation ---- */
+[data-anim] { opacity: 0; will-change: transform, opacity; }
+[data-anim].in-view { animation-duration: 0.9s; animation-timing-function: var(--ease); animation-fill-mode: both; }
+[data-anim="fade-up"].in-view { animation-name: fadeUp; }
+[data-anim="fade-down"].in-view { animation-name: fadeDown; }
+[data-anim="fade-left"].in-view { animation-name: fadeLeft; }
+[data-anim="fade-right"].in-view { animation-name: fadeRight; }
+[data-anim="zoom-in"].in-view { animation-name: zoomIn; }
+
+/* Staggered children ------------------------------------------------------- */
+[data-anim-delay="1"] { animation-delay: 0.12s; }
+[data-anim-delay="2"] { animation-delay: 0.24s; }
+[data-anim-delay="3"] { animation-delay: 0.36s; }
+[data-anim-delay="4"] { animation-delay: 0.48s; }
+[data-anim-delay="5"] { animation-delay: 0.6s; }
+
+/* Text reveal for hero headings ------------------------------------------- */
+.hero .eyebrow, .hero h1, .hero p, .hero__actions { animation: fadeUp 1s var(--ease) both; }
+.hero h1 { animation-delay: 0.15s; }
+.hero p { animation-delay: 0.3s; }
+.hero__actions { animation-delay: 0.45s; }
+
+/* Hover micro-interactions ------------------------------------------------- */
+.hover-lift { transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease); }
+.hover-lift:hover { transform: translateY(-8px); box-shadow: var(--shadow-md); }
+.hover-zoom { overflow: hidden; }
+.hover-zoom img { transition: transform 0.7s var(--ease); }
+.hover-zoom:hover img { transform: scale(1.08); }
+
+.underline-anim { position: relative; display: inline-block; }
+.underline-anim::after {
+  content: ""; position: absolute; left: 0; bottom: -2px; width: 100%; height: 1px;
+  background: currentColor; transform: scaleX(0); transform-origin: right;
+  transition: transform 0.4s var(--ease);
+}
+.underline-anim:hover::after { transform: scaleX(1); transform-origin: left; }
